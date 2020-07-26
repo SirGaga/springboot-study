@@ -1,2 +1,13 @@
 server:
   port: 8080
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 10 #最大连接数
+        max-idle: 6 #最大空闲数
+        min-idle: 2 #最小空闲数
+    timeout: 2000 #连接超时
